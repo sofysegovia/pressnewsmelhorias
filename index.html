@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PressNews</title>  
+    <link rel="icon" type="image/x-icon" href="https://i.ibb.co/sWJqFBd/pressnewzinhosemfundo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="angeloluisgustavoana.css">
+    <link rel="stylesheet" href="jogos.html">
+    <link rel="stylesheet" href="contatos.html">
+    <link rel="stylesheet" href="esportes.html">
+    <link rel="stylesheet" href="cidade.html">
+    <link rel="stylesheet" href="bateria.html">
+    <link rel="stylesheet" href="saude.html">
+  </head>
+  <body>
+    <header class="cabecalho">
+
+      <div class="overlay" onclick="closeNav()"></div>
+
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="jogos.html"  class="menu-opcao">Jogos</a>
+        <a href="esportes.html" class="menu-opcao">Esportes</a>
+        <a href="politica.html" class="menu-opcao">Política <br>Internacional</a>
+        <a href="ciencia.html" class="menu-opcao">Ciência e <br>Tecnologia</a> 
+        <a href="saude.html"  class="menu-opcao">Saúde</a>
+        <a href="assuntos.html" class="menu-opcao">Assuntos do <br>momento</a>
+        <a href="economia.html" class="menu-opcao">Economia e <br>Finanças</a>
+        <a href="meioambiente.html" class="menu-opcao">Meio Ambiente e <br>Sustentabilidade</a>
+        <a href="educacao.html" class="menu-opcao">Educação</a>
+        <a href="moda.html" class="menu-opcao">Moda e Estilo</a>
+        <a href="artes.html" class="menu-opcao">Artes e Literatura</a>
+        <a href="contatos.html" class="menu-opcao">Contatos</a>
+      </div>
+
+      <div id="main">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      </div>
+      
+      <center><img class="logo" src="https://i.ibb.co/xGJPjT0/pressnewssemfundo.png"></center>
+
+    </header>
+
+    <center><div class="image-container">
+      <span class="close-btn" id="close-btn">×</span>
+      <img id="random-image" src="https://casafreitas2.vteximg.com.br/arquivos/ids/261771/mega%20ofertas%20%201300x300%20(1).png?v=638104245822200000">
+      <img id="random-image" src="https://mercadoeconsumo.com.br/wp-content/uploads/2023/11/Banner-1300x300-MC.png">
+      <img id="random-image" src="https://casafreitas2.vteximg.com.br/arquivos/ids/261692/1300x300%20(5).png?v=638103338836300000">
+      <img id="random-image" src="https://casafreitas2.vteximg.com.br/arquivos/ids/264705/banner%201300x300%20(5).png?v=638173616622500000">
+  </div></center>
+
+
+  <a href="teletransporte.html" class="teleporte">
+    <img class="teletransporte" src="https://img.olhardigital.com.br/wp-content/uploads/2019/08/20190809122349.jpg">
+    <div class="sombra"></div>
+    <h1 class="teleportada">Tecnologia revolucionária de<br> teletransporte é revelada por <br>cientistas renomados</h1>
+    <h2 class="teleportada2">• Liderado pelo Dr. Elena Martinez, tecnologia promete <br>revolucionar viagens e exploração, mas questões éticas e <br>de segurança surgem.</h2>
+    </div>
+  </a>
+
+  <a href="cidade.html" class="arqueologia">
+    <img class="arqueologiamaia" src="https://www.cm-sabugal.pt/wp-content/uploads/2022/08/fotos_escavacoes_arqueologicas-5.jpg">
+    <div class="sombra2"></div>
+    <h1 class="maia">Descoberta arqueológica revoluciona a <br>história da civilização maia</h1>
+    <h2 class="maia2">• Arqueólogos descobrem uma cidade maia perdida na <br>Guatemala, a "Cidade do Jaguar", com templos e <br>palácios intactos, redefinindo a compreensão da <br>antiga civilização.</h2>
+  </a>
+
+
+  <a href="bateria.html" class="bateria">
+    <img class="bateriaimagem" src="https://img.odcdn.com.br/wp-content/uploads/2022/03/bateria-estado-solido-mullen.jpg">
+    <div class="sombra3"></div> 
+    <h1 class="bateri"> Baterias de estado sólido revolucionam a <br>indústria automotiva</h1>
+    <h2 class="batata">• Uma empresa do Vale do Silício<br> cria baterias de estado sólido mais eficientes, com carregamento <br>rápido e longa vida útil, impulsionando <br> a popularização dos veículos elétricos. </h2>
+  </a>
+
+  <div class="linhahorizontal"></div>
+
+  <div id="curiosity-container">
+
+    <h1 class="curiosidadedodia">Curiosidade do Dia</h1>
+
+    <p id="curiosity-text"></p>
+
+    <img id="curiosity-image">
+  </div>
+
+  <div class="espaco"></div>
+
+  <header class="rodape">Copyright © 2024 PressNews Brasil. Todos os direitos reservados.</header>
+
+  <div class="cookies-msg" id="cookies-msg">
+    <div class="cookies-txt">
+        <p>Nós utilizamos cookies e tecnologias semelhantes para melhorar sua experiência no nosso site, analisar tráfego, personalizar conteúdo e oferecer anúncios direcionados. Ao continuar navegando, você concorda com o uso de cookies.</p>
+        <div class="cookies-btn">
+            <button onclick="aceito()">Aceito</button>
+        </div>
+    </div>
+  </div>
+  </body>
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+      document.querySelector(".overlay").style.display = "block";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+      document.querySelector(".overlay").style.display = "none";
+    }
+  </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var images = [
+            'https://casafreitas2.vteximg.com.br/arquivos/ids/261771/mega%20ofertas%20%201300x300%20(1).png?v=638104245822200000',
+            'https://mercadoeconsumo.com.br/wp-content/uploads/2023/11/Banner-1300x300-MC.png',
+            'https://casafreitas2.vteximg.com.br/arquivos/ids/261692/1300x300%20(5).png?v=638103338836300000',
+            'https://casafreitas2.vteximg.com.br/arquivos/ids/264705/banner%201300x300%20(5).png?v=638173616622500000'
+        ];
+
+        var randomIndex = Math.floor(Math.random() * images.length);
+        var randomImage = images[randomIndex];
+
+        var imgElement = document.getElementById('random-image');
+        var closeBtn = document.getElementById('close-btn');
+
+        imgElement.src = randomImage;
+
+        closeBtn.addEventListener('click', function() {
+            imgElement.src = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMIAAAEDCAMAAABQ/CumAAAAA1BMVEX///+nxBvIAAAASElEQVR4nO3BAQ0AAADCoPdPbQ43oAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIB7A8VJAAEcmy75AAAAAElFTkSuQmCC';
+            closeBtn.style.display = 'none';
+        });
+    });
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+  
+        var curiosities = [
+            {text: "Estalos das articulações: Apesar do mito popular, o som de estalar os dedos não é causado pelos ossos batendo uns nos outros. Na verdade, é o resultado da formação e colapso de uma bolha de gás no líquido sinovial das articulações.", image: "https://www.hospitalmoriah.com.br/wp-content/uploads/2023/03/estalar-os-dedos-faz-mal-hospital-moriah.jpg"},
+            {text: "Piscar de olhos: Você sabia que piscamos, em média, cerca de 15 a 20 vezes por minuto? Isso é aproximadamente 28.800 vezes por dia! O piscar de olhos ajuda a manter os olhos lubrificados e limpos.", image: "https://advisionclinica.com.br/wp-content/uploads/2019/10/07-90.jpg"},
+            {text: "Pontos de vida das formigas: As formigas operárias têm uma vida bastante arriscada. Estima-se que o tempo médio de vida de uma formiga operária varie de algumas semanas a alguns meses, dependendo da espécie e das condições ambientais.", image: "https://img.odcdn.com.br/wp-content/uploads/2022/09/formiga-rainha.jpg"},
+            {text: "Cor dos flamingos: Os flamingos nascem com uma plumagem cinza ou branca e desenvolvem sua cor rosa característica por causa da sua dieta rica em carotenoides, pigmentos encontrados em alimentos como camarão e algas.", image: "https://www.infoescola.com/wp-content/uploads/2016/10/flamingo-358774244.jpg"},
+            {text: "Impressão digital dos golfinhos: Assim como os seres humanos têm impressões digitais únicas, os golfinhos têm impressões digitais únicas em suas nadadeiras dorsais. Essas impressões são usadas por pesquisadores para identificar indivíduos em estudos de população.", image: "https://super.abril.com.br/wp-content/uploads/2021/01/orcl-golfinho_site.jpg?quality=90&strip=info&w=720&h=440&crop=1"},
+            {text: "Fobia de palhaços: A coulrofobia é o medo irracional de palhaços. Estima-se que cerca de 12% dos adultos nos Estados Unidos têm algum nível de medo de palhaços.", image: "https://media.istockphoto.com/id/533837393/pt/foto/palha%C3%A7o.jpg?s=612x612&w=0&k=20&c=70Z5DmZ1KWRYTpsTMqjiFTDzI4-uoDBoLJe42Dip5mQ="},
+            {text: "Resistência das teias de aranha: As teias de aranha são incrivelmente fortes. De fato, a resistência à tração da seda de aranha é comparável à do aço, tornando-a uma das substâncias naturais mais fortes conhecidas pelo homem.", image: "https://s2.glbimg.com/_gIqMryJu79PLXiMQdceKcmitMU=/e.glbimg.com/og/ed/f/original/2018/11/09/black-and-white-pattern-line-monochrome-material-circle-invertebrate-spider-web-spider-dewdrop-symmetry-arachnid-network-arthropod-spider-web-with-water-beads-monochrome-photography-698361.jpg"},
+            {text: "Fala dos papagaios: Os papagaios podem aprender a imitar a fala humana devido à sua capacidade de modular o trato vocal e copiar sons. Alguns papagaios podem até mesmo formar frases e entender o contexto em que estão falando.", image: "https://www.petz.com.br/blog/wp-content/uploads/2022/05/como-cortar-unha-de-papagaio-2.jpg"},
+            {text: "Voo das abelhas: Apesar de suas asas pequenas e aparentemente frágeis, as abelhas são excelentes voadores. Elas podem viajar a uma velocidade média de 24 km/h e podem até mesmo voar contra ventos fortes.", image: "https://cptstatic.s3.amazonaws.com/imagens/enviadas/materias/materia26926/abelha-cpt.jpg"},
+            {text: "Longevidade das baleias-da-groenlândia: As baleias-da-groenlândia são os mamíferos com maior longevidade conhecida, com algumas delas vivendo mais de 200 anos. Essa longevidade é atribuída à sua baixa taxa metabólica e ao ambiente estável em que vivem nas águas geladas do Ártico.", image: "https://blog.pescagerais.com.br/wp-content/uploads/2021/03/baleia-da-groenlandia-balaena-mysticetus.jpg"}
+        ];
+
+        var randomIndex = Math.floor(Math.random() * curiosities.length);
+        var randomCuriosity = curiosities[randomIndex];
+
+        var curiosityText = document.getElementById("curiosity-text");
+        curiosityText.textContent = randomCuriosity.text;
+
+        var curiosityImage = document.getElementById("curiosity-image");
+        curiosityImage.src = randomCuriosity.image;
+    });
+  </script>
+
+  <script>
+    var msgCookies = document.getElementById ('cookies-msg')
+    
+    function aceito(){
+        localStorage.lgpd = "sim"
+        msgCookies.classList.remove ('mostrar')
+    }
+
+    if (localStorage.lgpd == 'sim') {
+        msgCookies.classList.remove ('mostrar')
+    } else {
+        msgCookies.classList.add ('mostrar')
+    }
+  </script>
+
+</html>

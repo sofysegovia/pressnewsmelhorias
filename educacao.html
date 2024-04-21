@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PressNews</title>  
+    <link rel="icon" type="image/x-icon" href="https://i.ibb.co/sWJqFBd/pressnewzinhosemfundo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="angeloluisgustavoana.css">
+    <link rel="stylesheet" href="jogos.html">
+    <link rel="stylesheet" href="contatos.html">
+    <link rel="stylesheet" href="esportes.html">
+    <link rel="stylesheet" href="cidade.html">
+    <link rel="stylesheet" href="bateria.html">
+    <link rel="stylesheet" href="saude.html">
+  </head>
+  <body>
+    <header class="cabecalho">
+
+      <div class="overlay" onclick="closeNav()"></div>
+
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="jogos.html"  class="menu-opcao">Jogos</a>
+        <a href="esportes.html" class="menu-opcao">Esportes</a>
+        <a href="politica.html" class="menu-opcao">Política <br>Internacional</a>
+        <a href="ciencia.html" class="menu-opcao">Ciência e <br>Tecnologia</a> 
+        <a href="saude.html"  class="menu-opcao">Saúde</a>
+        <a href="assuntos.html" class="menu-opcao">Assuntos do <br>momento</a>
+        <a href="economia.html" class="menu-opcao">Economia e <br>Finanças</a>
+        <a href="meioambiente.html" class="menu-opcao">Meio Ambiente e <br>Sustentabilidade</a>
+        <a href="educacao.html" class="menu-opcao">Educação</a>
+        <a href="moda.html" class="menu-opcao">Moda e Estilo</a>
+        <a href="artes.html" class="menu-opcao">Artes e Literatura</a>
+        <a href="contatos.html" class="menu-opcao">Contatos</a>
+      </div>
+
+      <div id="main">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      </div>
+      
+      <center><a href="index.html"><img class="logo" src="https://i.ibb.co/xGJPjT0/pressnewssemfundo.png"></a></center>
+
+    </header>
+
+    <center>
+        <header class="todaanoticia">
+            <a href="#" class="noticia1">
+                <img src="https://s2.static.brasilescola.uol.com.br/educador/2020/04/aulas-on-line.jpg" class="onlineimagem">
+                <h1 class="online">Nova pesquisa revela que alunos preferem <br>aulas online, mas valorizam interação presencial</h1>
+            </a>
+            <a href="#" class="noticia2">
+                <img src="https://www.remessaonline.com.br/blog/wp-content/uploads/2019/12/Saiba-como-conseguir-bolsas-de-estudo-no-exterior.jpg" class="bolsaimagem">
+                <h1 class="bolsa">Governo lança programa de bolsas <br>de estudo para incentivar estudos <br>em áreas STEM</h1>
+            </a>
+            <a href="#" class="noticia3">
+                <img src="https://blogs.funiber.org/pt/wp-content/uploads/2018/01/funiber-realidade-virtual-escola.jpg" class="realidadeimagem">
+                <h1 class="realidade">Escolas adotam tecnologia de realidade <br>virtual para tornar a aprendizagem <br>mais imersiva</h1>
+            </a>
+            <a href="#" class="noticia4">
+                <img src="https://classic.exame.com/wp-content/uploads/2020/05/globo-formatura-diploma.jpg?quality=70&strip=info&w=1024" class="programabolsaimagem">
+                <h1 class="programabolsa">Universidades expandem programas <br>de bolsas para atrair estudantes <br>internacionais</h1>
+            </a>
+            <a href="#" class="noticia5">
+                <img src="https://www.fundsexplorer.com.br/artigos/wp-content/uploads/2022/03/Imagem21.png" class="financeiraimagem">
+                <h1 class="financeira">Escolas implementam currículos <br>de educação financeira para preparar <br>alunos para o futuro</h1>
+            </a>
+
+            <div class="linha"></div>
+
+            <a href="#" class="noticia6">
+                <img src="https://www.ce.ufpb.br/catedraunescoeja/noticia/semana-internacional-de-educacao-artistica-72.png" class="arteimagem">
+                <h1 class="arte">Campanha nacional destaca a <br>importância da educação artística <br>na formação dos alunos</h1>
+            </a>
+            <a href="#" class="noticia7">
+                <img src="https://www.conteudoinboundmarketing.com.br/wp-content/uploads/2018/06/criatividade-executivo.jpg" class="criativoimagem">
+                <h1 class="criativo">Escolas investem em espaços de <br>aprendizagem flexíveis para promover <br>a colaboração e criatividade</h1>
+            </a>
+            <a href="#" class="noticia8">
+                <img src="https://coc.com.br/wp-content/webp-express/webp-images/uploads/2022/11/AdobeStock_74051621-2048x1386.jpeg.webp" class="jogoimagem">
+                <h1 class="jogo">Professores incorporam jogos <br>educacionais para tornar o <br>aprendizado mais envolvente e eficaz</h1>
+            </a>
+            <a href="#" class="noticia9">
+                <img src="https://blog.santamonicarede.com.br/wp-content/uploads/2022/03/meio-ambiente-e-educacao-infantil.jpeg" class="ambienteimagem">
+                <h1 class="ambiente">Escolas promovem educação <br>ambiental para conscientizar os <br>alunos sobre questões globais</h1>
+            </a>
+        </header>
+    </center>
+
+    <div style="padding-top: 1100px;"><center><div class="rodape">Copyright © 2024 PressNews Brasil. Todos os direitos reservados.</div></center></div>
+  </body>
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+      document.querySelector(".overlay").style.display = "block";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+      document.querySelector(".overlay").style.display = "none";
+    }
+  </script>
+
+  <style>
+    body {
+        margin: 0px;
+        padding: 0px;
+    } 
+
+    .cabecalho {
+        padding: 30px;
+        background: linear-gradient(to left, #4845f5, cyan);
+    }
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 2;
+        display: none;
+    }
+
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 3;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+
+    .sidenav a {
+        padding: 10px 15px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+        color: #f1f1f1;
+    }
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+    #main {
+        transition: margin-left 0.5s;
+        padding: 16px;
+        position: absolute;
+    }
+
+    .menu-opcao {
+        font-family: 'Open Sans';
+    }
+
+    .image-container {
+        position: relative;
+        top: 50px;
+        width: 1300px;
+        height: 300px;
+        object-fit: cover;
+        overflow: hidden;
+    }
+
+    #random-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .close-btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 20px;
+        color: #fff;
+        cursor: pointer;
+    }
+    
+    a {
+        color: black;
+        text-decoration: none;
+    }
+
+    h1, h2 {
+        font-family: 'Open Sans';
+        text-align: left;
+    }
+    
+    .onlineimagem:hover, .bolsaimagem:hover, .realidadeimagem:hover, .programabolsaimagem:hover, .financeiraimagem:hover, .jogoimagem:hover, .ambienteimagem:hover, .criativoimagem:hover, .arteimagem:hover {
+        filter: brightness(92%);
+    }
+
+    .onlineimagem {
+        position: absolute;
+        top: 30%;
+        left: 34%;
+        width: 600px;
+        max-height: 500px;
+        object-fit: cover;
+    }
+
+    .online {
+        position: absolute;
+        top: 64%;
+        left: 35%;
+        font-size: 23px;
+        color: white;
+        text-shadow: -1px 1px 2px #000,  
+                        1px 2px 6px #000,
+                        1px -1px 0 #000,
+                        -1px -1px 0 #000;
+        padding: 0px;
+        margin: 0px; 
+    }
+
+    .bolsaimagem {
+        position: absolute;
+        top: 30%;
+        left: 17.5%;
+        max-width: 300px;
+        height: 190px;
+        object-fit: cover;
+    }
+
+    .bolsa {
+        position: absolute;
+        top: 43%;
+        left: 18%;
+        font-size: 14px;
+        color: white;
+        text-shadow: -1px 1px 2px #000,  
+                        1px 2px 6px #000,
+                        1px -1px 0 #000,
+                        -1px -1px 0 #000;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .realidadeimagem {
+        position: absolute;
+        top: 52.5%;
+        left: 17.5%;
+        width: 300px;
+        max-height: 190px;
+        object-fit: cover;
+    }
+
+    .realidade {
+        position: absolute;
+        top: 66%;
+        left: 18%;
+        font-size: 14px;
+        color: white;
+        text-shadow: -1px 1px 2px #000,  
+                        1px 2px 6px #000,
+                        1px -1px 0 #000,
+                        -1px -1px 0 #000;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .programabolsaimagem {
+        position: absolute;
+        top: 30%;
+        left: 66.7%;
+        width: 300px;
+        max-height: 190px;
+        object-fit: cover;
+    }
+
+    .programabolsa {
+        position: absolute;
+        top: 43%;
+        left: 67.1%;
+        font-size: 14px;
+        color: white;
+        text-shadow: -1px 1px 2px #000,  
+                        1px 2px 6px #000,
+                        1px -1px 0 #000,
+                        -1px -1px 0 #000;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .financeiraimagem {
+        position: absolute;
+        top: 52.7%;
+        left: 66.7%;
+        width: 300px;
+        max-height: 190px;
+        object-fit: cover;
+    }
+
+    .financeira {
+        position: absolute;
+        top: 65.8%;
+        left: 67.1%;
+        font-size: 14px;
+        color: white;
+        text-shadow: -1px 1px 2px #000,  
+                        1px 2px 6px #000,
+                        1px -1px 0 #000,
+                        -1px -1px 0 #000;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .linha {
+        position: absolute;
+        top: 82%;
+        left: 17%;
+        height: 1px;
+        width: 66%;
+        background-color: black;
+    }
+
+    .arteimagem {
+        position: absolute;
+        top: 92%;
+        left: 17.5%;
+        width: 290px;
+        max-height: 190px;
+        object-fit: cover;
+    }
+
+    .arte {
+        position: absolute;
+        top: 104.8%;
+        left: 18%;
+        font-size: 14px;
+        color: white;
+        text-shadow: -1px 1px 2px #000,  
+                        1px 2px 6px #000,
+                        1px -1px 0 #000,
+                        -1px -1px 0 #000;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .criativoimagem {
+        position: absolute;
+        top: 92%;
+        left: 33.8%;
+        width: 290px;
+        max-height: 190px;
+        object-fit: cover;
+    }
+
+    .criativo {
+        position: absolute;
+        top: 104.8%;
+        left: 34.3%;
+        font-size: 14px;
+        color: white;
+        text-shadow: -1px 1px 2px #000,  
+                        1px 2px 6px #000,
+                        1px -1px 0 #000,
+                        -1px -1px 0 #000;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .jogoimagem {
+        position: absolute;
+        top: 92%;
+        left: 50.1%;
+        width: 290px;
+        max-height: 190px;
+        object-fit: cover;
+    }
+
+    .jogo {
+        position: absolute;
+        top: 104.8%;
+        left: 50.5%;
+        font-size: 14px;
+        color: white;
+        text-shadow: -1px 1px 2px #000,  
+                        1px 2px 6px #000,
+                        1px -1px 0 #000,
+                        -1px -1px 0 #000;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .ambienteimagem {
+        position: absolute;
+        top: 92%;
+        left: 66.4%;
+        width: 290px;
+        max-height: 190px;
+        object-fit: cover;
+    }
+
+    .ambiente {
+        position: absolute;
+        top: 104.8%;
+        left: 67%;
+        font-size: 14px;
+        color: white;
+        text-shadow: -1px 1px 2px #000,  
+                        1px 2px 6px #000,
+                        1px -1px 0 #000,
+                        -1px -1px 0 #000;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .rodape {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Open Sans';
+        height: 100px;
+        width: auto;
+        background-color: #0C0C0C;
+        color: white;
+    }
+
+  </style>
+</html>

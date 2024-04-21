@@ -1,0 +1,262 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teletransporte</title>
+    <link rel="icon" type="image/x-icon" href="https://i.ibb.co/sWJqFBd/pressnewzinhosemfundo.png">
+</head>
+
+    <header class="cabecalho">
+
+        <div class="overlay" onclick="closeNav()"></div>
+  
+       <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="jogos.html"  class="menu-opcao">Jogos</a>
+        <a href="esportes.html" class="menu-opcao">Esportes</a>
+        <a href="politica.html" class="menu-opcao">Política <br>Internacional</a>
+        <a href="ciencia.html" class="menu-opcao">Ciência e <br>Tecnologia</a> 
+        <a href="saude.html"  class="menu-opcao">Saúde</a>
+        <a href="assuntos.html" class="menu-opcao">Assuntos do <br>momento</a>
+        <a href="economia.html" class="menu-opcao">Economia e <br>Finanças</a>
+        <a href="meioambiente.html" class="menu-opcao">Meio Ambiente e <br>Sustentabilidade</a>
+        <a href="educacao.html" class="menu-opcao">Educação</a>
+        <a href="moda.html" class="menu-opcao">Moda e Estilo</a>
+        <a href="artes.html" class="menu-opcao">Artes e Literatura</a>
+        <a href="contatos.html" class="menu-opcao">Contatos</a>
+      </div>
+  
+        <div id="main">
+          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        </div>
+        
+        <center><a href="index.html"><img class="logo" src="https://i.ibb.co/xGJPjT0/pressnewssemfundo.png"></a></center>
+
+</header>
+
+<script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+      document.querySelector(".overlay").style.display = "block";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+      document.querySelector(".overlay").style.display = "none";
+    }
+  </script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+      var images = [
+          'https://casafreitas2.vteximg.com.br/arquivos/ids/262306/Banner%20principal%201300X300.jpg?v=638127592836830000',
+          'https://cdn-repercussaoparanhana.nuneshost.com/wp-content/uploads/2021/08/THE-PETIT-1300X300.png',
+          'https://casafreitas2.vteximg.com.br/arquivos/ids/255366/1300x300.png?v=638070759354630000',
+          ''
+      ];
+
+      var randomIndex = Math.floor(Math.random() * images.length);
+      var randomImage = images[randomIndex];
+
+      var imgElement = document.getElementById('random-image');
+      var closeBtn = document.getElementById('close-btn');
+
+      imgElement.src = randomImage;
+
+      closeBtn.addEventListener('click', function() {
+          imgElement.src = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMIAAAEDCAMAAABQ/CumAAAAA1BMVEX///+nxBvIAAAASElEQVR4nO3BAQ0AAADCoPdPbQ43oAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIB7A8VJAAEcmy75AAAAAElFTkSuQmCC';
+          closeBtn.style.display = 'none';
+      });
+  });
+</script> 
+
+<body>
+   
+ <div class="noticia">
+  <br><br>
+    <h1>Galeria de Artes Ana das Carrancas recebe<br> exposição que mistura arte e ciência na caatinga</h1>
+       <p class="descricao"><b>A exposição abre na sexta, 19 de abril. As visitas podem ser feitas de quarta a domingo, até o dia 26 de maio, gratuitamente.</b></p>
+       <br><br>
+
+       <div class="image-container">
+        <span class="close-btn" id="close-btn">×</span>
+        <img id="random-image" src="https://casafreitas2.vteximg.com.br/arquivos/ids/262306/Banner%20principal%201300X300.jpg?v=638127592836830000">
+        <img id="random-image" src="https://cdn-repercussaoparanhana.nuneshost.com/wp-content/uploads/2021/08/THE-PETIT-1300X300.png">
+        <img id="random-image" src="https://casafreitas2.vteximg.com.br/arquivos/ids/255366/1300x300.png?v=638070759354630000">
+        <img id="random-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDe_y8ATwOpICqLFlMlRT4ekQPNW_mcxFtHFKDoxdZ4-qD0RcFuoYya7KkN7LZGcf03g&usqp=CAU">
+    </div>
+    <br><br>
+  
+    <p>A partir da sexta-feira (19), a Galeria de Artes Ana das Carrancas, no Sesc Petrolina, Sertão de Pernambuco, recebe a exposição "Laboratório CAA-T-ENGA". A mostra possui uma junção entre arte e ciência, e utiliza o território da caatinga e ambiente acadêmico como panos de fundo para as obras.<br><br>
+        A mostra tem a organização e peças dos artistas Ariel Farfan, Edson Macalini, Jussara Damasceno, Maysa Castro e Tacylla Olliveira e coordenação de Edson Macalini. As obras foram montadas a partir da inspiração que os artistas encontraram ao explorar os laboratórios de microbiologia, conservação de fauna e recuperação de áreas degradadas da Univasf.<br><br>
+        À medida que nos aventuramos nesse novo território desconhecido, uma coisa é certa: o futuro nunca pareceu tão emocionante.</p>
+        <br><br>
+   <img class="cientista" src="https://s2-g1.glbimg.com/pImVFzp5TRpOo727Zd75Fo_SSgo=/0x0:1024x768/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/Z/N/WexKRbS5aFbuUGGrBYuQ/whatsapp-image-2023-04-26-at-12.59.38.jpeg">
+    <br><br>
+
+    <h1>Exposição "Eu e o Mundo", com curadoria de Uiara Bartira, abre na quinta no Alfredo Andersen</h1>
+    <br><br>
+   <p>A Academia Alfredo Andersen, espaço anexo ao Museu Casa, abre na próxima quinta-feira (18), às 19h, na Sala Anna de Oliveira, a exposição "Eu e o Mundo", com curadoria de Uiara Bartira. Em cartaz até 30 de maio, a mostra reúne o trabalho de nove artistas mulheres e seus questionamentos sobre o gênero na arte contemporânea.<br><br>
+
+    Adriana Vintem, Angela Muggiati, Daniela Veronesi, Francinete Alberton, Loirí Vechio, Marli Thomaz, Nelma Takeuti, Silvia Serbena e VeraLu repensam a relação individual com o mundo, o gênero e a arte em si, reimaginando a própria identidade e lugar no mundo contemporâneo. As produções são resultados de encontros e pesquisas baseadas na história da arte figurativa, orientados pela curadora.<br><br>
+    
+    Coleção que marca centenário de Poty Lazzarotto já está em exibição no MON<br><br>
+    Durante os encontros, o grupo trabalhou com referências de grandes nomes da arte contemporânea e com movimentos executados por modelos vivos.<br><br>
+    
+    Ao analisarem a obra "Les Demoiselles d'Avignon”, ou “As Senhoritas de Avignon”, de Pablo Picasso, por exemplo, surgiu um desafio: o modelo vivo disponível para a sessão era masculino. Enquanto mentora, Uiara aproveitou a situação e propôs ao coletivo a dualidade do masculino e feminino como tema, iniciando o diálogo sobre questões de identidade.<br><br>
+    
+    As influências levaram as artistas a refletir como o gênero é historicamente discutido na arte, além do reconhecimento de outros pensamentos duais presentes no cotidiano, explorando os conflitos conceituais e simbólicos como a matéria e o espírito, a liberdade e a aceitação, o individualismo e a sociedade, o eu e o mundo.<br><br>
+    
+    Poty, João Carlos Martins, Nando Reis e Abril Indígena são os destaques da agenda cultural<br><br>
+    Associação de Amigos do MAC Paraná anuncia reabertura do Festival de Audiovisualidades<br><br>
+    
+    “Há uma presença do que está faltando. Essa presença faltante é nossa própria presença”, diz Uiara. "Ao explorarmos as dualidades do masculino e feminino, do individualismo e da sociedade, buscamos não apenas entender, mas também desafiar as convenções que moldam nossa percepção de identidade".<br><br>
+    
+    Inspiradas pelos movimentos artísticos do século XX, as artistas exploram as possibilidades do afresco como técnica principal. Bartira afirma que a escolha não é apenas um retorno à tradição, mas uma afirmação da durabilidade e da atemporalidade da arte em sua capacidade de provocar pensamentos e emoções.</p>
+       
+   <img class="cientista" src="https://www.aen.pr.gov.br/sites/default/arquivos_restritos/files/imagem/2024-04/11042024-_dsc0804foto-_kraw_penas-seec.jpg">
+<br><br>
+
+   <h1>Biblioteca Pública Municipal recebe exposição de artes plásticas</h1>
+   <br><br>
+   <p>A Biblioteca Pública Municipal e Escolar Norberto Cândido Silveira Júnior recebe uma exposição com obras de artes do artista plástico Walmir Binhotti. A iniciativa é um convite ao público para o lançamento do livro-arte “Ponto Focal - Mãos do Sacro ao Surreal”, de autoria do expositor, que acontece na próxima quinta-feira (18), a partir das 20h, também na biblioteca.<br><br>
+
+    O livro-arte foi produzido a partir de um projeto aprovado pela Lei Municipal de Incentivo à Cultura, do Município e da Fundação Cultural de Itajaí. O coquetel de lançamento do livro é aberto ao público em geral. Os visitantes ainda podem conferir a exposição no hall de entrada da biblioteca. Também estão à mostra quadros e livros do autor Walmir Binhotti.<br><br>
+    
+    Algumas das obras expostas no local são reconhecidas e premiadas internacionalmente. Além disso, os trabalhos do artista já foram vistos e vendidos em diversos países, como Itália, França, Holanda, Índia, Argentina, Colômbia e Estados Unidos.<br><br>
+    
+    Sobre o autor e a obra<br><br>
+    
+    Walmir Binhotti começou sua carreira artística com a pintura de imagens sacras em igrejas. Seu trabalho despertou a atenção de importantes galerias de São Paulo, o que lhe rendeu um convite para sua primeira participação em uma exposição internacional, que ocorreu em Pádua, na Itália, em 2010.<br><br>
+    
+    O livro-arte “Ponto Focal – Mãos do Sacro ao Surreal” conta a trajetória de Walmir Binhotti e apresenta diversas obras de sua autoria. Através de imagens super-realistas de mãos que aparecem “rasgando” a tela e fazendo parte da cena, o exemplar revela a marca pessoal que o autor imprime em suas obras.</p>
+<br><br>
+
+
+ 
+
+   <img class="cientista" src="https://itajai.sc.gov.br/img/noticias/foto/144246.jpg">
+ </div>
+
+</body>
+
+ <style>
+  body {
+        margin: 0px;
+        padding: 0px;
+    } 
+
+    .cabecalho {
+        padding: 30px;
+        background: linear-gradient(to left, #4845f5, cyan);
+    }
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 2;
+        display: none;
+    }
+
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 3;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+
+    .sidenav a {
+        padding: 10px 15px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+        color: #f1f1f1;
+    }
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+    #main {
+        transition: margin-left 0.5s;
+        padding: 16px;
+        position: absolute;
+    }
+
+    .menu-opcao {
+        font-family: 'Open Sans';
+        padding-top: 500px;
+    }
+
+  .noticia{
+    font-family: 'Open Sans' ;
+    position:absolute;
+    left: 350px;
+    text-align: left;
+   width: 60%;
+  }
+
+  p{
+    font-size: 22px;
+  }
+
+   .descricao{
+     font-size:  15px; ;
+   }
+
+  .cientista{
+    width: 1000px;
+    height: 900px;
+  }
+
+  .image-container {
+        position: relative;
+        top: 10px;
+        width: 1000px;
+        height: 200px;
+        object-fit: cover;
+        overflow: hidden;
+    }
+
+    #random-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .close-btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 20px;
+        color: #fff;
+        cursor: pointer;
+    }
+
+  </style>
+
+
+   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</html>

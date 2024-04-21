@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="icon" type="image/x-icon" href="https://static.vecteezy.com/system/resources/previews/010/157/349/non_2x/globe-icon-sign-symbol-design-free-png.png">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="contatos.css">
+    <link rel="stylesheet" href="index.html">
+    
+</head>
+<body>
+    <header class="cabecalho">
+
+        <div class="overlay" onclick="closeNav()"></div>
+  
+       <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="jogos.html"  class="menu-opcao">Jogos</a>
+        <a href="esportes.html" class="menu-opcao">Esportes</a>
+        <a href="politica.html" class="menu-opcao">Política <br>Internacional</a>
+        <a href="ciencia.html" class="menu-opcao">Ciência e <br>Tecnologia</a> 
+        <a href="saude.html"  class="menu-opcao">Saúde</a>
+        <a href="assuntos.html" class="menu-opcao">Assuntos do <br>momento</a>
+        <a href="economia.html" class="menu-opcao">Economia e <br>Finanças</a>
+        <a href="meioambiente.html" class="menu-opcao">Meio Ambiente e <br>Sustentabilidade</a>
+        <a href="educacao.html" class="menu-opcao">Educação</a>
+        <a href="moda.html" class="menu-opcao">Moda e Estilo</a>
+        <a href="artes.html" class="menu-opcao">Artes e Literatura</a>
+        <a href="contatos.html" class="menu-opcao">Contatos</a>
+      </div>
+  
+        <div id="main">
+          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        </div>
+        
+        <center><a href="index.html"><img class="logo" src="https://i.ibb.co/xGJPjT0/pressnewssemfundo.png"></a></center>
+  
+      </header>
+  
+      <center><div class="image-container">
+        <span class="close-btn" id="close-btn">×</span>
+        <img id="random-image" src="https://casafreitas2.vteximg.com.br/arquivos/ids/262306/Banner%20principal%201300X300.jpg?v=638127592836830000">
+        <img id="random-image" src="https://cdn-repercussaoparanhana.nuneshost.com/wp-content/uploads/2021/08/THE-PETIT-1300X300.png">
+        <img id="random-image" src="https://casafreitas2.vteximg.com.br/arquivos/ids/255366/1300x300.png?v=638070759354630000">
+        <img id="random-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDe_y8ATwOpICqLFlMlRT4ekQPNW_mcxFtHFKDoxdZ4-qD0RcFuoYya7KkN7LZGcf03g&usqp=CAU">
+    </div></center>
+  
+    <div style="padding-top: 70px;"></div>
+    
+
+    <div class="container">
+        <h2>Enviar Mensagem</h2>
+        
+        <form action="mensagem.html" method="POST">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+             <label for="cep">CEP:</label>
+             <input type="text" id="numero" placeholder="xxxxxxxx" oninput="validarNumero(this)" pattern="\d*" maxlength="9" required>
+         </div>
+            <div class="form-group">
+               <label for="enredeco">Endereço:</label>
+               <input type="text" id="endereco" name="endereco" required>
+           </div>
+            <div class="form-group">
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+            </div>
+            <button type="submit" href="mensagem.html">Enviar</button>
+        </form>
+       </div>  
+
+
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+          document.querySelector(".overlay").style.display = "block";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+          document.querySelector(".overlay").style.display = "none";
+        }
+    </script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var images = [
+            'https://casafreitas2.vteximg.com.br/arquivos/ids/262306/Banner%20principal%201300X300.jpg?v=638127592836830000',
+            'https://cdn-repercussaoparanhana.nuneshost.com/wp-content/uploads/2021/08/THE-PETIT-1300X300.png',
+            'https://casafreitas2.vteximg.com.br/arquivos/ids/255366/1300x300.png?v=638070759354630000',
+            ''
+        ];
+
+        var randomIndex = Math.floor(Math.random() * images.length);
+        var randomImage = images[randomIndex];
+
+        var imgElement = document.getElementById('random-image');
+        var closeBtn = document.getElementById('close-btn');
+
+        imgElement.src = randomImage;
+
+        closeBtn.addEventListener('click', function() {
+            imgElement.src = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMIAAAEDCAMAAABQ/CumAAAAA1BMVEX///+nxBvIAAAASElEQVR4nO3BAQ0AAADCoPdPbQ43oAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIB7A8VJAAEcmy75AAAAAElFTkSuQmCC';
+            closeBtn.style.display = 'none';
+        });
+    });
+  </script> 
+
+    <script>
+        function validarNumero(input) {
+            input.value = input.value.replace(/\D/g, '');
+        
+            if (input.value.length > 9) {
+                input.value = input.value.slice(0, 9);
+            }
+        }
+    </script>
+
+</body>
+
+<style>
+    body {
+        margin: 0px;
+        padding: 0px;
+    } 
+
+    .cabecalho {
+        padding: 30px;
+        background: linear-gradient(to left, #4845f5, cyan);
+    }
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 2;
+        display: none;
+    }
+
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 3;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+
+    .sidenav a {
+        padding: 10px 15px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+        color: #f1f1f1;
+    }
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+    #main {
+        transition: margin-left 0.5s;
+        padding: 16px;
+        position: absolute;
+    }
+
+    .menu-opcao {
+    font-family: 'Open Sans';
+    
+    padding-top: 500px;
+    }
+
+    .image-container {
+        position: relative;
+        top: 50px;
+        width: 1300px;
+        height: 300px;
+        object-fit: cover;
+        overflow: hidden;
+    }
+
+    #random-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .close-btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 20px;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .rodape {
+        background-color: #f5f5f5;
+        text-align: center;
+        font-family: monospace;
+        font-size: 15px;
+        padding: 30px;
+        bottom: 0px;
+    }
+
+    .container {
+        width: 80%;
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        font-family: 'Open Sans';
+        font-weight: 100;
+    }
+
+    .container form {
+        width: 100%; 
+        text-align: left; 
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px; 
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    textarea {
+        width: calc(100% - 22px); 
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    button {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        margin-top: 10px; 
+    }
+</style>
+</html>

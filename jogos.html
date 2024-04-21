@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://i.ibb.co/sWJqFBd/pressnewzinhosemfundo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.html">
+    <title>Jogos</title>
+</head>
+<body>
+    <header class="cabecalho">
+
+      <div class="overlay" onclick="closeNav()"></div>
+
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="jogos.html"  class="menu-opcao">Jogos</a>
+        <a href="esportes.html" class="menu-opcao">Esportes</a>
+        <a href="politica.html" class="menu-opcao">Política <br>Internacional</a>
+        <a href="ciencia.html" class="menu-opcao">Ciência e <br>Tecnologia</a> 
+        <a href="saude.html"  class="menu-opcao">Saúde</a>
+        <a href="assuntos.html" class="menu-opcao">Assuntos do <br>momento</a>
+        <a href="economia.html" class="menu-opcao">Economia e <br>Finanças</a>
+        <a href="meioambiente.html" class="menu-opcao">Meio Ambiente e <br>Sustentabilidade</a>
+        <a href="educacao.html" class="menu-opcao">Educação</a>
+        <a href="moda.html" class="menu-opcao">Moda e Estilo</a>
+        <a href="artes.html" class="menu-opcao">Artes e Literatura</a>
+        <a href="contatos.html" class="menu-opcao">Contatos</a>
+      </div>
+
+      <div id="main">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      </div>
+      
+      <center><a href="index.html"><img class="logo" src="https://i.ibb.co/xGJPjT0/pressnewssemfundo.png"></a></center>
+
+    </header>
+    
+      <div class="titulo">
+        <h2 id="titulo"></h2>
+    </div>
+
+    <div class="descricao">
+        <p id="descricao"></p>
+    </div>
+
+    <div class="carousel">
+      <button class="carousel-btn prev-btn" onclick="moveSlide(-1)">‹</button>
+      <a href="https://www.google.com/search?q=snake+game&oq=snake+game&aqs=chrome..69i57.1584j0j1&sourceid=chrome&ie=UTF-8"> <img src="https://i.ibb.co/4g7zQQc/snake.png" alt="Jogo Da Cobrinha"> </a>
+      <a href="https://www.google.com/search?si=AKbGX_r9SIlYXhx9GDVXHym0RFfgGngpb5fuuQ69nspkX6ldLKZPkmuFeA7ac-KIYCLUcWpCOpmD&biw=1920&bih=1008&dpr=1"><img src="https://i.ibb.co/Qpbjh4x/snake-1.png" alt="Pacman"></a>
+      <a href="https://www.google.com/search?si=AKbGX_rRUyyIelBDULDVNehsNFICrtyA-VelZzWgtmbHVWjnZPkERqW7A3cJrP8WEiRCkYrmV7KUDztGjcqBPK2b4aTPHKlLTw==&biw=1920&bih=950&dpr=1"><img src="https://i.ibb.co/zrJ6yP5/jogo-da-velha.png" alt="Jogo Da Velha Game"></a>
+      <button class="carousel-btn next-btn" onclick="moveSlide(1)">›</button>
+    </div>
+    
+    <div class="imagens">
+        <img id="imagem" src="" alt="">
+    </div>
+  
+    <div style="padding-top: 600px;"><center><div class="rodape">Copyright © 2024 PressNews Brasil. Todos os direitos reservados.</div></center></div>
+
+</body>
+
+<script>
+  let slideIndex = 0;
+  const slides = document.querySelectorAll('.carousel img');
+  const descriptions = ["O jogo da cobrinha (ou Snake Game em inglês), é um jogo clássico no qual o jogador controla uma cobra que se move pelo campo de jogo. O objetivo é comer comida para crescer enquanto evita colidir com as paredes do campo ou com seu próprio corpo. O jogo termina quando a cobra colide. É simples, mas desafiador e viciante.", "Pac-Man é um clássico jogo de arcade onde o jogador controla um personagem amarelo chamado Pac-Man. O objetivo é comer todas as bolinhas no labirinto enquanto evita ser capturado pelos fantasmas. Bolinhas maiores tornam os fantasmas vulneráveis, permitindo que o Pac-Man os coma para ganhar pontos extras.", "O Jogo da Velha é um jogo de estratégia para dois jogadores, jogado em um tabuleiro 3x3. Os jogadores alternam colocando seus símbolos (X ou O) em casas vazias, com o objetivo de formar uma linha reta de três símbolos iguais na horizontal, vertical ou diagonal. O jogo termina quando um jogador alcança este objetivo ou quando todas as casas estão preenchidas, resultando em um empate."];
+  const titles = ["Jogo Da Cobrinha", "Pacman", "Jogo Da Velha"];
+  const images = ["https://i.pinimg.com/originals/b2/5c/1d/b25c1dcf47b7f24b4bfd6c6038e3428b.gif", "https://i.pinimg.com/originals/f6/7a/12/f67a122b8f6af771bcabd8db7c641c5e.gif", "https://user-images.githubusercontent.com/52453558/78082270-ee5c6300-7388-11ea-97e8-17e05054ea28.gif"];
+
+  function showSlide() {
+      if (slideIndex >= slides.length) slideIndex = 0;
+      if (slideIndex < 0) slideIndex = slides.length - 1;
+      slides.forEach(slide => slide.style.display = 'none');
+      slides[slideIndex].style.display = 'block';
+      document.getElementById('titulo').innerText = titles[slideIndex];
+      document.getElementById('descricao').innerText = descriptions[slideIndex];
+      document.getElementById('imagem').src = images[slideIndex];
+  }
+
+  function moveSlide(n) {
+      slideIndex += n;
+      showSlide();
+  }
+
+  showSlide();
+</script>
+
+<script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.querySelector(".overlay").style.display = "block";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.querySelector(".overlay").style.display = "none";
+  }
+  </script>
+
+
+<style>
+  body {
+    margin: 0px;
+    padding: 0px;
+  } 
+
+.cabecalho {
+    padding: 30px;
+    background: linear-gradient(to left, #4845f5, cyan);
+  }
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    display: none;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+#main {
+    transition: margin-left 0.5s;
+    padding: 16px;
+    position: absolute;
+}
+
+.menu-opcao {
+    font-family: 'Open Sans';
+    padding-top: 500px;
+}
+
+.carousel {
+  display: flex;
+  overflow: hidden;
+  width: 500px;
+  margin: 0 auto;
+  position: relative;
+  left: 20%;
+  top: 390px;
+}
+
+.carousel img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-btn {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 10px;
+  border: none;
+  z-index: 100;
+}
+
+.prev-btn {
+  left: 0;
+}
+
+.next-btn {
+  right: 0;
+}
+
+h2, p {
+  font-family: 'Open Sans';
+  text-align: left;
+}
+
+.titulo {
+  position: absolute;
+  font-size: 30px;
+  left: 20%;
+  top: 20%;
+}
+
+.descricao {
+  width: 62%;
+  position: absolute;
+  font-size: 20px;
+  left: 20%;
+  top: 35%;
+}
+
+.imagens {
+  position: absolute;
+  left: 20%; 
+  top: 54%;
+}
+
+.rodape {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Open Sans';
+        height: 100px;
+        width: auto;
+        background-color: #0C0C0C;
+        color: white;
+  }
+
+</style>
+
+
+</html>
