@@ -99,11 +99,11 @@ body {
 
 .teletransporte {
   position: absolute; 
-  left: 200px;
+  left: 75px;
   top: 600px;
   height: 806px;
   width: 750px;
-  object-fit: cover;
+  object-fit: cover;  
 }
 
 .sombra {
@@ -112,7 +112,7 @@ body {
   width: 750px;
   height: 806px;
   opacity: 0.4;
-  left: 200px;
+  left: 75px;
   top: 600px;
 }
 
@@ -121,10 +121,11 @@ body {
 }
 
 .teleportada {
+  margin-left: 20%;
   position: absolute;
   font-family: 'Open Sans';
   font-size: 40px;
-  left: 250px;
+  left: 100px;
   top: 1050px;
   color: white;
   text-shadow: -1px 1px 2px #000,  
@@ -139,7 +140,7 @@ body {
   position: absolute;
   font-family: 'Open Sans';
   font-size: 20px;
-  left: 250px;
+  left: 100px;
   top: 1255px;
   color: white;
   text-shadow: 0px 0px 0px #000,  
@@ -154,7 +155,7 @@ body {
 .arqueologiamaia {
   position: absolute;
   top: 600px;
-  left: 1000px;
+  left: 850px;
   object-fit: cover;
   width: 680px;
   max-height: 360px;
@@ -166,7 +167,7 @@ body {
   width: 680px;
   height: 360px;
   opacity: 0.4;
-  left: 1000px;
+  left: 850px;
   top: 600px;
 }
 
@@ -174,7 +175,7 @@ body {
   position: absolute;
   font-family: 'Open Sans';
   font-size: 28px;
-  left: 1035px;
+  left: 875px;
   top: 680px;
   color: white;
   text-shadow: -1px 1px 2px #000,  
@@ -190,7 +191,7 @@ body {
     position: absolute;
     font-family: 'Open Sans';
     font-size: 16px;
-    left: 1040px;
+    left: 875px;
     top: 820px;
     color: white;
     text-shadow: -1px 1px 2px #000,  
@@ -204,7 +205,7 @@ body {
 .bateriaimagem {
   position: absolute;
   top: 1045px;
-  left: 1000px;
+  left: 855px;
   object-fit: cover;
   width: 680px;
   max-height: 360px;
@@ -216,7 +217,7 @@ body {
   width: 680px;
   height: 360px;
   opacity: 0.4;
-  left: 1000px;
+  left: 855px;
   top: 1045px;
 
 }
@@ -225,13 +226,13 @@ body {
   position: absolute;
   font-family: 'Open Sans';
   font-size: 26px;
-  left: 1040px;
+  left: 875px;
   top: 1150px;
   color: white;
   text-shadow: -1px 1px 2px #000,  
                 1px 2px 6px #000,
                 1px -1px 0 #000,
-                -1px -1px 0 #000;
+               -1px -1px 0 #000;
   padding: 0px;
   margin: 0px;  
 }
@@ -240,7 +241,7 @@ body {
   position: absolute;
   font-family: 'Open Sans';
   font-size: 15px;
-  left: 1040px;
+  left: 875px;
   top: 1280px;
   color: white;
   text-shadow: -1px 1px 2px #000,  
